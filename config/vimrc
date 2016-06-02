@@ -1,0 +1,41 @@
+"Vundle Plugin Config
+source ~/.vim/config/minirc.vim
+"source ~/.vim/config/nerdtree.vim
+"source ~/.vim/config/tagbar.vim
+source ~/.vim/config/airline.vim
+"source ~/.vim/config/vimgo.vim
+"source ~/.vim/config/ycm.vim
+
+"Vim Config
+set fileencodings=utf-8,gbk,cp936,gb2312,big5,iso-8859,usc-bom,shift-jis,utf-16,gb18030
+set termencoding=utf-8
+set encoding=prc
+set shiftwidth=4 " 设定 cindent、<<、>> 缩进每一步使用的空白数目
+set tabstop=4 " 设定 tab 长度为
+set softtabstop=4           " 编辑时执行<tab>或<BackSpace>的时候,把<tab>作为空格的数目
+set cindent " 使用 C/C++ 语言的自动缩进方式
+set nobackup " 覆盖文件时不备份
+set noswapfile " 缓冲区不使用交换文件
+set wrap
+set showmatch " 插入括号时，短暂的跳转到匹配的对应括号，显示匹配的时间由matchtime决定
+set showcmd
+set showmode
+"set mouse=a
+set pastetoggle=<F2>
+set autoindent " 打开自动缩进，通常与smartindent同时打开
+set smartindent " 智能自动缩进              
+set iskeyword+=_,$,@,%,#,- " 将这些字符作为关键字，带有这些符号的单词不换行
+set nu " 显示行号
+" 显示十字光标
+set cursorcolumn
+set cursorline
+set vb t_vb=
+syntax on " 自动语法高亮                 
+filetype indent on           
+filetype plugin on           
+filetype plugin indent on    
+"let mapleader=","           " 映射快捷键开始命令为","号
+"let g:mapleader=","         " g:表示全局设置
+
+" key map
+imap <C-l> <Esc>o
